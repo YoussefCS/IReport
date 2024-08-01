@@ -1,0 +1,497 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top header styles */
+.top-header {
+    width: 100%;
+    height: 120px; /* Adjust height as needed */
+    background-color: #1f4693; /* Dark blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.top-header img {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    max-height: 100%; /* Ensure image does not exceed container height */
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 300px;
+    height: 100vh; /* Full viewport height */
+    background-color: #1f4693; /* Dark blue sidebar */
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Enable scrollbar if content exceeds height */
+    border-right: 1px solid #000; /* Black border on the right */
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.menu-divider {
+    width: 80%; /* Adjust width as needed */
+    height: 1px; /* Adjust thickness as needed */
+    background-color: white; /* White color */
+    border: none; /* Remove default border */
+    margin: 10px auto; /* Adjust margin for spacing */
+}
+
+.contacts-list {
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-item:hover, .contact-item.active {
+    background-color: #465877; /* Darker blue on hover or active */
+}
+
+.contact-name {
+    color: #fff;
+}
+
+.box {
+    background-color: #263238; /* Darker sidebar background */
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items horizontally */
+    justify-content: center; /* Center align items vertically */
+}
+
+.box h3 {
+    font-size: 1.7rem;
+    margin-bottom: 3px;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-selection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-selection select {
+    width: 150px; /* Adjust width as needed */
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333;
+}
+
+.contact-selection button {
+    background-color: #1f4693; /* Blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-selection button:hover {
+    background-color: #2196F3; /* Darker blue on hover */
+}
+
+/* Main content area */
+.main-content {
+    flex: 1;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    background-color: #fff; /* White background */
+    overflow-y: auto; /* Enable scrollbar if content exceeds height */
+    padding-right: 20px; /* Ensure some padding on the right side */
+}
+
+.message-area {
+    display: flex;
+    flex-direction: column; /* Stack messages vertically */
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.contact-header {
+    background-color: #1f4693; /* Dark blue sidebar color */
+    color: white; /* White text color */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-header h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+/* New styles to remove bullets and adjust text alignment in the menu */
+ul.menu {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+}
+
+ul.menu li {
+    padding: 10px 0; /* Add padding for spacing */
+}
+
+ul.menu a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text color */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center align items vertically */
+    text-align: left; /* Left align text */
+}
+
+ul.menu i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Form styles */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 5px solid #ccc;
+    border-radius: 8px;
+}
+
+form fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+form legend {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="year"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+form button[type="submit"] {
+    background-color: #1f4693; /* Dark blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button[type="submit"]:hover {
+    background-color: #2196F3; /* Darker blue on hover */
+}
+
+.input-padding {
+    padding: 6px; /* Adjust padding as needed */
+    margin-bottom: 4px;
+}
+
+/* Align the print button to the right */
+.print-btn {
+    float: right;
+}
+
+.submit-btn, .print-btn, .view-btn, .modal-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #1f4693;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover, .print-btn:hover, .view-btn:hover, .modal-button:hover {
+    background-color: #007bff;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    margin: 10px 0;
+}
+
+.list-option {
+    display: block;
+    padding: 10px;
+    background-color: #f1f1f1;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.list-option:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Adjusted CSS for arrows between columns */
+.main-content-area-2 {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 150px); /* Adjust height as needed */
+}
+
+.column {
+    flex: 0 0 48%; /* Adjust width of columns */
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative; /* Ensure relative positioning for arrows */
+}
+
+.column .contact-header-2 {
+    background-color: #1f4693;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.column .message-area-2 {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%; /* Occupy full height of the column */
+    overflow-y: auto;
+}
+
+/* Adjusted CSS to remove bullet points from available fields and add highlight */
+.column .available-fields ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+}
+
+.column .available-fields li {
+    padding: 10px; /* Add padding for spacing */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth transition for highlight */
+}
+
+.column .available-fields li:hover, 
+.column .available-fields li.selected {
+    background-color: #d3d3d3; /* Highlight color */
+}
+
+/* Styles for sorted fields */
+.column .sorted-fields ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+}
+
+.column .sorted-fields li {
+    padding: 10px; /* Add padding for spacing */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth transition for highlight */
+}
+
+.column .sorted-fields li:hover, 
+.column .sorted-fields li.selected {
+    background-color: #d3d3d3; /* Highlight color */
+}
+
+/* Arrow button styles */
+#moveRight, #moveLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#moveRight {
+    background-color: #1f4693; /* Dark blue background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px; /* Add padding */
+    margin: 10px 0; /* Add margin */
+    margin-top: 300px;
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+#moveLeft {
+    background-color: #1f4693; /* Dark blue background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px; /* Add padding */
+    margin: 10px 0; /* Add margin */
+    margin-top: 50px;
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+#moveRight:hover, #moveLeft:hover {
+    background-color: #007bff; /* Darker blue on hover */
+}
+
+
+/* Input field styles */
+.field-value {
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 4px; /* Add border radius */
+}
+.input-padding {
+    padding: 5px;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+#incidentList table, #OCInjuryList table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#incidentList th, #incidentList td, #OCInjuryList th, #OCInjuryList td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#incidentList th, #OCInjuryList th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#incidentList tr:nth-child(even), #OCInjuryList tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#incidentList tr:hover, #OCInjuryList tr:hover {
+    background-color: #e2e2e2;
+    cursor: pointer;
+}
+
+#incidentList td, #OCInjuryList td {
+    font-size: 14px;
+    word-break: break-word;  /* Ensure that long text or date values wrap properly */
+}
+/* CSS for the popup modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 30%;
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+position: relative;
+}
+
+.modal-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.close {
+color: #aaa;
+font-size: 28px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+.modal-buttons {
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+}
+/* Success message styles */
+.success-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #dff0d8; /* Light green background for success */
+    color: #3c763d; /* Dark green text for success */
+    border: 1px solid #d6e9c6; /* Light green border for success */
+    border-radius: 8px;
+    margin-top: 300px;
+}
+
+.success-message p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+

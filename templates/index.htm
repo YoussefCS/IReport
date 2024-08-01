@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="top-header">
+            <img src="/static/img/SBC.jpg" alt="Image">
+        </div>
+        <div class="box">
+            <h3>Incident Reports</h3>
+        </div>
+        <h2>Menu</h2>
+        <nav>
+            <ul class="menu">
+                <li class="contact-item">
+                    <a href="#inputForm" class="contact-name" data-name="Incident Input Form" data-section="inputForm">
+                        <i class="fas fa-edit"></i> New Incident 
+                    </a>
+                </li>
+                <li class="contact-item">
+                    <a href="#viewForms" class="contact-name" data-name="Incident View Forms" data-section="viewForms">
+                        <i class="fas fa-search"></i> View Incidents
+                    </a>
+                </li>                
+                <li class="contact-item">
+                    <a href="#updateAccidentCodes" class="contact-name" data-name="Update Accident Codes" data-section="updateAccidentCodes">
+                        <i class="fas fa-car-crash"></i> Update Accident Codes
+                    </a>
+                </li>
+                <li class="contact-item">
+                    <a href="#updateVehicleCodes" class="contact-name" data-name="Update Vehicle Codes" data-section="updateVehicleCodes">
+                        <i class="fas fa-truck"></i> Update Vehicle Codes
+                    </a>
+                </li>
+                <hr class="menu-divider"> <!-- Add this line -->
+                <li class="contact-item">
+                    <a href="#OCInjury" class="contact-name" data-name="New Occupational Injury" data-section="OCInjury">
+                        <i class="fa-solid fa-user-injured"></i> New Occupational Injury
+                    </a>
+                </li>
+                <li class="contact-item">
+                    <a href="#viewOCInjuryForms" class="contact-name" data-name="OCInjury View Forms" data-section="viewOCInjuryForms">
+                        <i class="fa-solid fa-eye"></i> View OCInjury Forms
+                    </a>
+                </li>                
+                <li class="contact-item">
+                    <a href="#updateBodyCodes" class="contact-name" data-name="Update Body Codes" data-section="updateBodyCodes">
+                        <i class="fa-solid fa-child"></i> Update Body Codes
+                    </a>
+                </li>
+                <li class="contact-item">
+                    <a href="#updateInjuryCodes" class="contact-name" data-name="Update Injury Codes" data-section="updateInjuryCodes">
+                        <i class="fa-solid fa-crutch"></i> Update Injury Codes
+                    </a>
+                </li> 
+            </ul>
+        </nav>
+    </div>
+    <div id="main-content" class="main-content">
+        <div class="message-area">
+            <div class="contact-header">
+                <h2 id="contact-header-title">Select an Option</h2>
+            </div>                
+            <!-- Content goes here -->
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}" type="module"></script>
+</body>
+</html>
